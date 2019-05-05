@@ -15,13 +15,13 @@ The predictor is implemented on F# with Microsoft Cognitive Tool (CNTK). As a ba
 ## Problem formulation and NN architecture
 1. Feature feeding
 
-⋅⋅⋅Extract features out of the protein sequence for each Cysteine residue and use them as input value for the NN.⋅⋅
-⋅⋅⋅Set level of oxidation of a Cysteine as a corresponding output.⋅⋅
-⋅⋅⋅Use an architecture of vanilla Neural Network with several hidden layers
+   Extract features out of the protein sequence for each Cysteine residue and use them as input value for the NN.  
+   Set level of oxidation of a Cysteine as a corresponding output.  
+   Use an architecture of vanilla Neural Network with several hidden layers
 
 2. Sequence feeding
 
-⋅⋅⋅Break the whole protein sequence into peptides such that there were peptides from experiment (containing active Cysteine residue) and rest of the sequence and use them as sequential input value for the NN.⋅⋅
-⋅⋅⋅Set level of oxidation of a Cysteine as a corresponding output for Cys-containing peptide or 0 otherwise.⋅⋅
-⋅⋅⋅Use an architecture of Recurrent Neural Network with first set of layers for peptide2word embedding.
+   Break the whole protein sequence into peptides such that there were peptides from experiment (containing active Cysteine residue) and rest of the sequence and use them as sequential input value for the NN.  
+   Set level of oxidation of a Cysteine as a corresponding output for Cys-containing peptide or 0 otherwise.  
+   Use an architecture of Recurrent Neural Network with first set of layers for peptide2word embedding.
 
